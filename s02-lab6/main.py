@@ -12,14 +12,13 @@ pages = [
     { 'name': 'kursy',       'url': 'http://www.kursyonline24.eu/'} ]
 
 path =[]
-backslash = r"\ "
+backslash = r"\\"
 for i in range(len(pages)):
 
     filepath = data_dir + "\\" + pages[i-1]['url'] + ".html"
     path.append(filepath)
-
-    urllib.request.urlretrieve(pages[i]['url'], path[i])
-
-print(path)
+    
+    #urllib.request.urlretrieve(pages[i]['url'], path[i])
+    print(path[i])
 
 
